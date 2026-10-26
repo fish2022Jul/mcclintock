@@ -481,7 +481,7 @@ def install(methods, resume=False, debug=False):
 
         ##install component methods into conda environments using snakemake##
         mccutils.log("install","Installing scripts for:"+env)
-        command = ["snakemake", "--use-conda", "--conda-frontend=mamba", "--conda-prefix", conda_env_dir, "--configfile", install_config, "--cores", "1", "--nolock", data['output'][env]]
+        command = ["snakemake", "--use-conda", "--conda-frontend=conda", "--conda-prefix", conda_env_dir, "--configfile", install_config, "--cores", "1", "--nolock", data['output'][env]]
         if not debug:
             command.append("--quiet")
         mccutils.run_command(command)
