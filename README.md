@@ -6,7 +6,7 @@
 ## <a name="started"></a> Getting Started
 ```bash
 # INSTALL (Requires Conda and Mamba to be installed)
-git clone git@github.com:bergmanlab/mcclintock.git
+git clone git@github.com:fish2022Jul/mcclintock.git
 cd mcclintock
 mamba env create -f install/envs/mcclintock.yml --name mcclintock
 conda activate mcclintock
